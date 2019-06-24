@@ -1,3 +1,4 @@
+#!MANAGED-CONFIG https://raw.githubusercontent.com/Portan/v2ray-subscription/master/config.yml?token=AEUVAE5GDATR2H3RZIBZF4K5CBD5S
 # 2018-12-02 18:04:26
 #---------------------------------------------------#
 ## 配置文件需要放置在 $HOME/.config/clash/config.yml
