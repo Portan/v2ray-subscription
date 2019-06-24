@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/Portan/v2ray-subscription/master/config.yml?token=AEUVAE5GDATR2H3RZIBZF4K5CBD5S
+#!MANAGED-CONFIG https://raw.githubusercontent.com/Portan/v2ray-subscription/master/config.yml
 # 2018-12-02 18:04:26
 #---------------------------------------------------#
 ## 配置文件需要放置在 $HOME/.config/clash/config.yml
@@ -68,30 +68,6 @@ Proxy:
   #- { name: "vmess", type: vmess, server: server, port: 443, uuid: af656400-d5ac-4842-9619-bab705c5ce56, alterId: 32, cipher: auto, network: ws, ws-path: /path }
   #   ws + tls
   - {
-      name: "GGC-HKV",
-      type: vmess,
-      server: portan.ml,
-      port: 443,
-      uuid: af656400-d5ac-4842-9619-bab705c5ce56,
-      alterId: 64,
-      cipher: auto,
-      network: ws,
-      ws-path: /apple,
-      tls: true
-    }
-  - {
-      name: "GGC-LAXV",
-      type: vmess,
-      server: portan.gq,
-      port: 443,
-      uuid: af656400-d5ac-4842-9619-bab705c5ce56,
-      alterId: 64,
-      cipher: auto,
-      network: ws,
-      ws-path: /apple,
-      tls: true
-    }
-  - {
       name: "BWG-LAX",
       type: vmess,
       server: portan.cf,
@@ -125,7 +101,7 @@ Proxy Group:
   - {
       name: "auto",
       type: url-test,
-      proxies: [ "GGC-HKV", "GGC-LAXV", "BWG-LAX" ],
+      proxies: [ "BWG-LAX" ],
       url: "https://www.bing.com",
       interval: 300
     }
@@ -134,7 +110,7 @@ Proxy Group:
   - {
       name: "fallback-auto",
       type: fallback,
-      proxies: [ "GGC-HKV", "GGC-LAXV", "BWG-LAX" ],
+      proxies: [ "BWG-LAX" ],
       url: "https://www.bing.com",
       interval: 300
     }
@@ -144,7 +120,7 @@ Proxy Group:
   - {
       name: "Proxy",
       type: select,
-      proxies: [ "GGC-HKV", "GGC-LAXV", "BWG-LAX", "auto" ]
+      proxies: [ "BWG-LAX", "auto" ]
     }
 
 Rule:
