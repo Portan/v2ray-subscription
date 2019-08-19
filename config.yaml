@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/Portan/v2ray-subscription/master/config.yml
+#!MANAGED-CONFIG https://raw.githubusercontent.com/Portan/v2ray-subscription/master/config.yaml
 #---------------------------------------------------#
 ## 配置文件需要放置在 $HOME/.config/clash/config.yaml
 ## 
