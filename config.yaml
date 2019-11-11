@@ -153,7 +153,7 @@ Proxy Group:
   - {
       name: "auto",
       type: url-test,
-      proxies: [ "BWG-LAX" ],
+      proxies: [ "CF-LAX" ],
       url: "https://www.bing.com",
       interval: 300
     }
@@ -162,7 +162,7 @@ Proxy Group:
   - {
       name: "fallback-auto",
       type: fallback,
-      proxies: [ "BWG-LAX" ],
+      proxies: [ "CF-LAX" ],
       url: "https://www.bing.com",
       interval: 300
     }
@@ -172,7 +172,7 @@ Proxy Group:
   - {
       name: "Proxy",
       type: select,
-      proxies: [ "BWG-LAX", "auto" ]
+      proxies: [ "CF-LAX", "auto" ]
     }
 
 
