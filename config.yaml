@@ -120,7 +120,7 @@ Proxy:
 - {
       name: "CF-LAX",
       type: vmess,
-      server: portan.cf,
+      server: portan.tk,
       port: 443,
       uuid: af656400-d5ac-4842-9619-bab705c5ce56,
       alterId: 64,
