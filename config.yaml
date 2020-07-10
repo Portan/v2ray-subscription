@@ -91,7 +91,7 @@ dns:
 #   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
 #   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
 
-Proxy:
+proxies:
 # shadowsocks
 # 所支持的加密方式与 go-shadowsocks2 保持一致
 # 支持加密方式： 
@@ -148,7 +148,7 @@ Proxy:
 #   tls (https)  (skip-cert-verify)
 #- { name: "http", type: http, server: server, port: 443, tls: true, skip-cert-verify: true }
 
-Proxy Group:
+proxy-groups:
   # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
   - {
       name: "auto",
@@ -176,7 +176,7 @@ Proxy Group:
     }
 
 
-Rule:
+rules:
 # Apple
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
   - DOMAIN,safebrowsing.googleapis.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
